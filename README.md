@@ -83,7 +83,8 @@ La especificación contempla cinco comportamientos verificables:
 fundamentos-product-engineering-con-IA/
 ├── AGENTS.md
 ├── specs/
-│   └── inventario-fefo.md
+│   ├── inventario-fefo.md
+│   └── priorizacion-familias.md
 ├── skills/
 │   └── brand-design/
 │       └── SKILL.md
