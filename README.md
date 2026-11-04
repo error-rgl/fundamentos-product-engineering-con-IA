@@ -1,50 +1,48 @@
-Banco de Alimentos Comunitario
+
+
+\# Banco de Alimentos Comunitario
 
 
 
-Sistema de gestión de donaciones, inventario y distribución equitativa de alimentos.
+\*\*Sistema de gestión de donaciones, inventario y distribución equitativa de alimentos.\*\*
 
 
 
-Aplicación web orientada a mejorar la gestión de un banco de alimentos comunitario, ayudando a reducir el desperdicio y garantizar una distribución más organizada y justa entre las familias beneficiarias.
+\## Descripción del proyecto
 
 
 
-Ver aplicación · Ver repositorio
+Este proyecto consiste en desarrollar una solución digital para mejorar la gestión de un banco de alimentos comunitario coordinado por Jorge.
 
 
 
-1\. Sobre el proyecto
+El problema principal es que las donaciones llegan de manera impredecible, no existe un control adecuado de las fechas de vencimiento y tampoco se cuenta con un registro confiable de las entregas realizadas a las familias beneficiarias.
 
 
 
-El proyecto nace de la necesidad de resolver los problemas de organización de un banco de alimentos comunitario coordinado por Jorge.
+Por ello, propongo una aplicación web sencilla y accesible que permita organizar las donaciones, controlar el inventario, reducir el desperdicio de alimentos y mejorar la distribución de los recursos disponibles.
 
 
 
-Actualmente, las donaciones llegan de manera impredecible, no existe un control adecuado de los vencimientos y tampoco hay un registro confiable de las entregas realizadas a las familias.
+\## Objetivos
 
 
 
-La solución propone una herramienta digital sencilla, accesible y de bajo costo que facilite el trabajo de Jorge y los voluntarios.
+\- Reducir el desperdicio de alimentos.
+
+\- Mantener un inventario actualizado.
+
+\- Controlar las fechas de vencimiento.
+
+\- Registrar las entregas realizadas a las familias.
+
+\- Mejorar la distribución equitativa de los alimentos.
+
+\- Facilitar el trabajo de los voluntarios mediante una interfaz sencilla.
 
 
 
-Objetivos
-
-Reducir el desperdicio de alimentos.
-
-Mantener un inventario actualizado.
-
-Controlar las fechas de vencimiento.
-
-Registrar las entregas realizadas.
-
-Mejorar la distribución equitativa entre familias.
-
-Facilitar el trabajo de voluntarios con poca experiencia tecnológica.
-
-2\. Funcionalidades del producto
+\## Funcionalidades del producto
 
 
 
@@ -52,95 +50,119 @@ La aplicación contempla los siguientes módulos:
 
 
 
-Módulo	Descripción
+| Módulo | Descripción |
 
-Inicio	Resumen de la actividad y alertas prioritarias.
+|---|---|
 
-Donaciones	Registro y seguimiento de donaciones recibidas.
+| Inicio | Resumen de la actividad y alertas prioritarias. |
 
-Inventario	Control de productos, cantidades y lotes.
+| Donaciones | Registro y seguimiento de donaciones recibidas. |
 
-Familias	Registro y consulta de familias beneficiarias.
+| Inventario | Control de productos, cantidades y lotes. |
 
-Entregas	Registro e historial de distribución.
+| Familias | Registro y consulta de familias beneficiarias. |
 
-Reparto justo	Apoyo a la priorización de familias.
+| Entregas | Registro e historial de distribución. |
 
-Necesidades	Identificación de productos escasos.
+| Reparto justo | Apoyo a la priorización de familias. |
 
-Indicadores	Seguimiento de resultados del banco de alimentos.
+| Necesidades | Identificación de productos escasos. |
 
-Ajustes	Configuración y gestión de datos.
+| Indicadores | Seguimiento de resultados del banco de alimentos. |
 
-3\. Segunda etapa: Spec Driven Development
-
-
-
-En esta etapa se aplica el enfoque Spec Driven Development (SDD) para reconstruir una funcionalidad prioritaria del producto mediante especificaciones estructuradas que orientan el trabajo de un agente de IA.
+| Ajustes | Configuración y gestión de datos. |
 
 
 
-Feature seleccionado: Control de inventario y vencimientos
+\## Segunda etapa: Spec Driven Development
 
 
 
-Se seleccionó este feature porque uno de los principales problemas del banco de alimentos es la pérdida de productos por falta de control de las fechas de vencimiento.
+En esta segunda etapa, retomo el proyecto y aplico el enfoque \*\*Spec Driven Development (SDD)\*\* para desarrollar una funcionalidad prioritaria mediante especificaciones que orienten el trabajo de un agente de inteligencia artificial.
 
 
 
-La solución propone gestionar los alimentos por lotes y aplicar el principio FEFO (First Expired, First Out), priorizando aquellos productos aptos cuya fecha de vencimiento esté más próxima.
+\### Feature seleccionado: Control de inventario y vencimientos
 
 
 
-Entregables de SDD
-
-Archivo	Propósito
-
-AGENTS.md	Define el contexto persistente y las instrucciones generales del proyecto.
-
-specs/inventario-fefo.md	Establece el problema, el diseño de la solución y los criterios de aceptación.
-
-skills/brand-design/SKILL.md	Define las directrices de identidad visual y diseño de la aplicación.
-
-Criterios de aceptación
+Elegí esta funcionalidad porque uno de los principales problemas identificados es la pérdida de alimentos debido a la falta de control de las fechas de vencimiento.
 
 
 
-La especificación establece cinco criterios verificables:
+La solución consiste en gestionar los alimentos por lotes y aplicar el principio \*\*FEFO (First Expired, First Out)\*\*, priorizando los productos aptos cuya fecha de vencimiento esté más próxima.
 
 
 
-Registro de nuevos lotes y actualización del inventario.
+\### Entregables de SDD
 
-Priorización de lotes mediante FEFO.
 
-Bloqueo de productos vencidos para distribución normal.
 
-Validación de existencias para evitar cantidades negativas.
+Para orientar el desarrollo del feature, preparé tres archivos:
 
-Identificación de alimentos próximos a vencer.
 
-4\. Tecnologías
 
-Tecnología	Uso
+| Archivo | Propósito |
 
-Next.js 16	Framework de aplicación web.
+|---|---|
 
-React 19	Construcción de interfaces.
+| `AGENTS.md` | Define el contexto persistente y las instrucciones generales del proyecto. |
 
-TypeScript	Tipado y mantenibilidad del código.
+| `specs/inventario-fefo.md` | Describe el problema, el diseño de la solución y los criterios de aceptación. |
 
-Tailwind CSS 4	Estilos y diseño visual.
+| `skills/brand-design/SKILL.md` | Establece las directrices de identidad visual y diseño de la aplicación. |
 
-Base UI	Componentes de interfaz.
 
-Lucide React	Iconografía.
 
-pnpm	Gestión de dependencias.
+\### Criterios de aceptación
 
-5\. Estructura del proyecto
 
-text
+
+La especificación contempla cinco comportamientos verificables:
+
+
+
+1\. Registrar nuevos lotes y actualizar el inventario.
+
+2\. Priorizar los lotes mediante el principio FEFO.
+
+3\. Bloquear productos vencidos para su distribución normal.
+
+4\. Validar las existencias y evitar cantidades negativas.
+
+5\. Identificar los alimentos próximos a vencer.
+
+
+
+\## Tecnologías utilizadas
+
+
+
+| Tecnología | Uso |
+
+|---|---|
+
+| Next.js 16 | Framework de aplicación web. |
+
+| React 19 | Construcción de interfaces. |
+
+| TypeScript | Tipado y mantenibilidad del código. |
+
+| Tailwind CSS 4 | Estilos y diseño visual. |
+
+| Base UI | Componentes de interfaz. |
+
+| Lucide React | Iconografía. |
+
+| pnpm | Gestión de dependencias. |
+
+
+
+\## Estructura del proyecto
+
+
+
+```text
 
 fundamentos-product-engineering-con-IA/
 
@@ -178,41 +200,59 @@ fundamentos-product-engineering-con-IA/
 
 └── README.md
 
+```
 
 
-6\. Instalación y ejecución
 
-Requisitos
+\## Instalación y ejecución
 
-Node.js
 
-pnpm
 
-Clonar el repositorio
+\### Requisitos previos
 
-bash
+
+
+\- Node.js
+
+\- pnpm
+
+
+
+\### Clonar el repositorio
+
+
+
+```bash
 
 git clone https://github.com/error-rgl/fundamentos-product-engineering-con-IA.git
 
+```
 
 
-Instalar dependencias
 
-bash
+\### Instalar dependencias
+
+
+
+```bash
 
 cd fundamentos-product-engineering-con-IA
 
 pnpm install
 
+```
 
 
-Iniciar el entorno de desarrollo
 
-bash
+\### Ejecutar el proyecto
+
+
+
+```bash
 
 pnpm dev
 
-
+```
 
 
 
@@ -220,7 +260,21 @@ La aplicación estará disponible en:
 
 
 
-http://localhost:3000
+`http://localhost:3000`
 
 
+
+
+
+\## Enlaces del proyecto
+
+
+
+\- \*\*Aplicación web:\*\* https://gestion-banco-alimentos.vercel.app/
+
+\- \*\*Repositorio GitHub:\*\* https://github.com/error-rgl/fundamentos-product-engineering-con-IA
+
+
+
+\---
 
