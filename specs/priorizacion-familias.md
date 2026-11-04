@@ -144,7 +144,7 @@ La propuesta debe poder revisarse antes de confirmar cualquier entrega.
 
 \- \*\*Dado que\*\* el sistema ha generado una propuesta de priorización.
 
-\- \*\*Cuando\*\* Jorge revisa las familias sugeridas.
+\- \*\*Когда\*\* (o \*\*Cuando\*\*) Jorge revisa las familias sugeridas.
 
 \- \*\*Entonces\*\* debe poder aprobar o modificar la propuesta y ninguna entrega debe registrarse automáticamente.
 
@@ -172,6 +172,8 @@ Se utilizarán las siguientes métricas para evaluar el funcionamiento del featu
 
 
 
+> \*Nota: Los porcentajes son objetivos iniciales de diseño y deberán contrastarse con una línea base real.\*
+
 
 
 \### Fórmulas de medición
@@ -180,25 +182,25 @@ Se utilizarán las siguientes métricas para evaluar el funcionamiento del featu
 
 \- \*\*Cobertura de familias:\*\*  
 
-&#x20; $$\\frac{\\text{Familias elegibles atendidas}}{\\text{Total de familias elegibles}} \\times 100$$
+&#x20; Familias elegibles atendidas / Total de familias elegibles × 100.
 
 
 
 \- \*\*Tiempo promedio de espera:\*\*  
 
-&#x20; $$\\frac{\\text{Suma de días de espera de las familias elegibles}}{\\text{Número de familias elegibles}}$$
+&#x20; Suma de días de espera de las familias elegibles / Número de familias elegibles.
 
 
 
 \- \*\*Trazabilidad:\*\*  
 
-&#x20; $$\\frac{\\text{Propuestas con criterios explicados}}{\\text{Total de propuestas generadas}} \\times 100$$
+&#x20; Propuestas con criterios explicados / Total de propuestas generadas × 100.
 
 
 
 \- \*\*Registro de entregas:\*\*  
 
-&#x20; $$\\frac{\\text{Entregas confirmadas con historial}}{\\text{Total de entregas confirmadas}} \\times 100$$
+&#x20; Entregas confirmadas con historial / Total de entregas confirmadas × 100.
 
 
 
